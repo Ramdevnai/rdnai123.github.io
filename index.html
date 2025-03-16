@@ -1,0 +1,1463 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="साइबर सुरक्षा जागरूकता वेबसाइट - ऑनलाइन फ्रॉड से बचाव, सुरक्षित UPI पेमेंट्स, और डिजिटल प्राइवेसी के बारे में जानकारी">
+    <title>साइबर सुरक्षा जागरूकता | Cyber Suraksha</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- New Header Based on Image -->
+    <div class="main-header">
+        <div class="container">
+            <div class="logo-container">
+                <img src="images/logo.png" alt="साइबर सुरक्षा लोगो" id="logo-placeholder">
+                <div class="logo-text">
+                    <h1>साइबर</h1>
+                    <h2>सुरक्षा</h2>
+                </div>
+            </div>
+            <nav class="main-nav">
+                <ul class="main-menu">
+                    <li><a href="#home">होम</a></li>
+                    <li><a href="#visual-guide">विज़ुअल गाइड</a></li>
+                    <li><a href="#step-guides">स्टेप-बाय-स्टेप गाइड</a></li>
+                    <li><a href="#upi-safety">UPI सुरक्षा</a></li>
+                    <li><a href="#cyber-threats">साइबर खतरे</a></li>
+                    <li><a href="#social-media">सोशल मीडिया सुरक्षा</a></li>
+                    <li><a href="#password-security">पासवर्ड सुरक्षा</a></li>
+                    <li><a href="#device-security">डिवाइस सुरक्षा</a></li>
+                    <li><a href="#safe-browsing">सुरक्षित ब्राउज़िंग</a></li>
+                    <li><a href="#govt-initiatives">सरकारी पहल</a></li>
+                    <li><a href="#news-updates">नवीनतम अपडेट</a></li>
+                    <li><a href="#tech-glossary">शब्दकोश</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="home" class="hero">
+            <div class="container">
+                <div class="hero-content">
+                    <h2>अपनी डिजिटल सुरक्षा खुद करें</h2>
+                    <p>ऑनलाइन फ्रॉड से बचें और अपनी डिजिटल जानकारी सुरक्षित रखें</p>
+                    <div class="hero-buttons">
+                        <a href="#visual-guide" class="btn primary-btn">सुरक्षा गाइड देखें</a>
+                        <a href="#contact" class="btn secondary-btn">फ्रॉड रिपोर्ट करें</a>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <img src="images/hero-image.png" alt="साइबर सुरक्षा" id="hero-placeholder">
+                </div>
+            </div>
+        </section>
+
+        <!-- Alert Banner -->
+        <section class="alert-banner" id="alert-banner">
+            <div class="container">
+                <div class="alert">
+                    <i class="fas fa-exclamation-triangle"></i>
+                    <p><strong>सावधान!</strong> नया UPI स्कैम चल रहा है। किसी को भी अपना OTP न बताएं।</p>
+                    <button id="close-alert"><i class="fas fa-times"></i></button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Quick Access Tabs -->
+        <section class="quick-access-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2>त्वरित पहुंच</h2>
+                    <p>महत्वपूर्ण जानकारी तक तुरंत पहुंचें</p>
+                </div>
+                <div class="tabs-container">
+                    <div class="tabs">
+                        <button class="tab-btn active" data-tab="tab-visual">विज़ुअल गाइड</button>
+                        <button class="tab-btn" data-tab="tab-steps">स्टेप गाइड</button>
+                        <button class="tab-btn" data-tab="tab-upi">UPI सुरक्षा</button>
+                        <button class="tab-btn" data-tab="tab-cyber">साइबर खतरे</button>
+                        <button class="tab-btn" data-tab="tab-social">सोशल मीडिया</button>
+                        <button class="tab-btn" data-tab="tab-govt">सरकारी पहल</button>
+                    </div>
+                    <div class="tab-content">
+                        <div class="tab-pane active" id="tab-visual">
+                            <h3>सुरक्षित और असुरक्षित मैसेज और वेबसाइट पहचानें</h3>
+                            <div class="tab-cards">
+                                <div class="tab-card">
+                                    <div class="tab-card-icon">
+                                        <i class="fas fa-comment-alt"></i>
+                                    </div>
+                                    <h4>मैसेज की पहचान</h4>
+                                    <p>असुरक्षित मैसेज में अक्सर जल्दबाजी, धमकी या बहुत बड़े ऑफर होते हैं</p>
+                                </div>
+                                <div class="tab-card">
+                                    <div class="tab-card-icon">
+                                        <i class="fas fa-globe"></i>
+                                    </div>
+                                    <h4>वेबसाइट की पहचान</h4>
+                                    <p>सुरक्षित वेबसाइट के URL में https:// और लॉक आइकन होता है</p>
+                                </div>
+                                <div class="tab-card">
+                                    <div class="tab-card-icon">
+                                        <i class="fas fa-phone-alt"></i>
+                                    </div>
+                                    <h4>कॉल की पहचान</h4>
+                                    <p>असुरक्षित कॉल में अक्सर OTP, पासवर्ड या बैंक डिटेल्स मांगे जाते हैं</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane" id="tab-steps">
+                            <h3>स्टेप-बाय-स्टेप गाइड</h3>
+                            <div class="tab-cards">
+                                <div class="tab-card">
+                                    <div class="tab-card-icon">
+                                        <i class="fas fa-list-ol"></i>
+                                    </div>
+                                    <h4>सुरक्षा सेटिंग्स</h4>
+                                    <p>आसान कदमों में अपने फोन और अकाउंट्स की सुरक्षा सेटिंग्स सेट करें</p>
+                                </div>
+                                <div class="tab-card">
+                                    <div class="tab-card-icon">
+                                        <i class="fas fa-shield-alt"></i>
+                                    </div>
+                                    <h4>पासवर्ड सुरक्षा</h4>
+                                    <p>मजबूत पासवर्ड बनाने और उन्हें सुरक्षित रखने के आसान तरीके</p>
+                                </div>
+                                <div class="tab-card">
+                                    <div class="tab-card-icon">
+                                        <i class="fas fa-mobile-alt"></i>
+                                    </div>
+                                    <h4>फोन अपडेट</h4>
+                                    <p>अपने फोन को अपडेट करने के सरल चरण और सुरक्षा टिप्स</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane" id="tab-upi">
+                            <h3>सुरक्षित UPI पेमेंट्स</h3>
+                            <div class="tab-cards">
+                                <div class="tab-card">
+                                    <div class="tab-card-icon">
+                                        <i class="fas fa-qrcode"></i>
+                                    </div>
+                                    <h4>QR कोड स्कैन</h4>
+                                    <p>QR कोड स्कैन करने से पहले उसे अच्छे से देख लें और सिर्फ भरोसेमंद जगहों पर ही स्कैन करें</p>
+                                </div>
+                                <div class="tab-card">
+                                    <div class="tab-card-icon">
+                                        <i class="fas fa-hand-holding-usd"></i>
+                                    </div>
+                                    <h4>पैसे मांगने वाले रिक्वेस्ट</h4>
+                                    <p>किसी भी "Request Money" नोटिफिकेशन को एक्सेप्ट करने से पहले अच्छे से चेक करें</p>
+                                </div>
+                                <div class="tab-card">
+                                    <div class="tab-card-icon">
+                                        <i class="fas fa-key"></i>
+                                    </div>
+                                    <h4>UPI PIN सुरक्षा</h4>
+                                    <p>अपना UPI PIN कभी भी किसी के साथ शेयर न करें, यहां तक कि बैंक के कर्मचारी के साथ भी नहीं</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane" id="tab-cyber">
+                            <h3>साइबर खतरे: आम खतरों को समझें</h3>
+                            <div class="tab-cards">
+                                <div class="tab-card">
+                                    <div class="tab-card-icon">
+                                        <i class="fas fa-bug"></i>
+                                    </div>
+                                    <h4>हानिकारक सॉफ्टवेयर (मालवेयर)</h4>
+                                    <p>ये ऐसे प्रोग्राम हैं जो आपके फोन या कंप्यूटर में छिपकर आपकी जानकारी चुराते हैं या आपके डिवाइस को धीमा कर देते हैं।</p>
+                                    <div class="real-example">
+                                        <h5>उदाहरण:</h5>
+                                        <p>आपको एक मैसेज आता है कि "आपने ₹10,000 का इनाम जीता है, इस लिंक पर क्लिक करें"। जब आप क्लिक करते हैं, तो आपके फोन में एक छिपा हुआ प्रोग्राम इंस्टॉल हो जाता है जो आपके बैंक डिटेल्स चुरा लेता है।</p>
+                                    </div>
+                                    <div class="threat-tips">
+                                        <h5>बचाव के आसान उपाय:</h5>
+                                        <ul>
+                                            <li><i class="fas fa-check-circle"></i> केवल Play Store या App Store से ही ऐप्स डाउनलोड करें</li>
+                                            <li><i class="fas fa-check-circle"></i> अनजान लिंक पर क्लिक न करें, खासकर जो बड़े इनाम या ऑफर का वादा करते हों</li>
+                                            <li><i class="fas fa-check-circle"></i> अपने फोन को नियमित रूप से अपडेट करें</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                
+                                <div class="tab-card">
+                                    <div class="tab-card-icon">
+                                        <i class="fas fa-fish"></i>
+                                    </div>
+                                    <h4>फिशिंग धोखाधड़ी</h4>
+                                    <p>इसमें हैकर्स आपको फर्जी मैसेज या ईमेल भेजकर आपकी निजी जानकारी मांगते हैं, जैसे पासवर्ड या बैंक डिटेल्स।</p>
+                                    <div class="real-example">
+                                        <h5>उदाहरण:</h5>
+                                        <p>आपको एक SMS आता है: "आपका SBI अकाउंट बंद होने वाला है, अपना KYC अपडेट करें" और एक लिंक दिया होता है। यह बैंक से नहीं बल्कि धोखेबाजों से आया मैसेज होता है।</p>
+                                    </div>
+                                    <div class="threat-tips">
+                                        <h5>बचाव के आसान उपाय:</h5>
+                                        <ul>
+                                            <li><i class="fas fa-check-circle"></i> बैंक या सरकारी संस्थाओं के नाम से आए मैसेज पर तुरंत विश्वास न करें</li>
+                                            <li><i class="fas fa-check-circle"></i> पासवर्ड या OTP कभी भी किसी को न बताएं, चाहे वो बैंक से ही क्यों न कहे</li>
+                                            <li><i class="fas fa-check-circle"></i> अगर कोई मैसेज डराता है या जल्दबाजी करने को कहता है, तो वह संदिग्ध है</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                
+                                <div class="tab-card">
+                                    <div class="tab-card-icon">
+                                        <i class="fas fa-lock"></i>
+                                    </div>
+                                    <h4>रैनसमवेयर</h4>
+                                    <p>यह एक प्रकार का मालवेयर है जो आपके फोन या कंप्यूटर को लॉक कर देता है और आपसे पैसे मांगता है।</p>
+                                    <div class="real-example">
+                                        <h5>उदाहरण:</h5>
+                                        <p>आप एक अनजान ऐप डाउनलोड करते हैं और अचानक आपके फोन की सभी फोटो और फाइल्स तक पहुंच बंद हो जाती है। स्क्रीन पर एक मैसेज आता है कि अपनी फाइल्स वापस पाने के लिए क्रिप्टोकरेंसी में पैसे भेजें।</p>
+                                    </div>
+                                    <div class="threat-tips">
+                                        <h5>बचाव के आसान उपाय:</h5>
+                                        <ul>
+                                            <li><i class="fas fa-check-circle"></i> अपने महत्वपूर्ण डेटा का बैकअप रखें (Google Photos, Google Drive में)</li>
+                                            <li><i class="fas fa-check-circle"></i> अनजान स्रोतों से ऐप्स या फाइल्स डाउनलोड न करें</li>
+                                            <li><i class="fas fa-check-circle"></i> अपने डिवाइस को नियमित रूप से अपडेट करें</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                
+                                <div class="tab-card">
+                                    <div class="tab-card-icon">
+                                        <i class="fas fa-user-secret"></i>
+                                    </div>
+                                    <h4>फर्जी कॉल और मैसेज</h4>
+                                    <p>धोखेबाज अक्सर बैंक, सरकारी अधिकारी या पुलिस अधिकारी बनकर कॉल करते हैं और आपसे पैसे या जानकारी मांगते हैं।</p>
+                                    <div class="real-example">
+                                        <h5>उदाहरण:</h5>
+                                        <p>आपको एक कॉल आती है जिसमें कॉलर खुद को "RBI अधिकारी" बताता है और कहता है कि आपके नाम से दूसरे शहर में एक अकाउंट खुला है जिसमें से पैसे निकाले जा रहे हैं। वह आपसे OTP या अकाउंट डिटेल्स मांगता है।</p>
+                                    </div>
+                                    <div class="threat-tips">
+                                        <h5>बचाव के आसान उपाय:</h5>
+                                        <ul>
+                                            <li><i class="fas fa-check-circle"></i> किसी भी अनजान कॉलर को अपना OTP, पासवर्ड या बैंक डिटेल्स न दें</li>
+                                            <li><i class="fas fa-check-circle"></i> अगर कोई खुद को सरकारी अधिकारी बताता है, तो उसका नाम और ID नंबर पूछें और आधिकारिक नंबर पर वापस कॉल करें</li>
+                                            <li><i class="fas fa-check-circle"></i> अगर कोई आपको डराता है या जल्दबाजी करने को कहता है, तो वह धोखेबाज हो सकता है</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="what-to-do-box">
+                                <h4>अगर आप साइबर फ्रॉड का शिकार हो गए हैं तो क्या करें?</h4>
+                                <ol>
+                                    <li><strong>तुरंत रिपोर्ट करें:</strong> साइबर फ्रॉड हेल्पलाइन 1930 पर कॉल करें या <a href="https://cybercrime.gov.in/" target="_blank">cybercrime.gov.in</a> पर शिकायत दर्ज करें</li>
+                                    <li><strong>बैंक को सूचित करें:</strong> अगर पैसे गए हैं तो तुरंत अपने बैंक की हेल्पलाइन पर कॉल करें</li>
+                                    <li><strong>सबूत रखें:</strong> सभी संदिग्ध मैसेज, कॉल डिटेल्स और स्क्रीनशॉट सेव करें</li>
+                                    <li><strong>पासवर्ड बदलें:</strong> अपने सभी महत्वपूर्ण अकाउंट्स के पासवर्ड तुरंत बदल दें</li>
+                                </ol>
+                            </div>
+                        </div>
+                        <div class="tab-pane" id="tab-social">
+                            <h3>सोशल मीडिया सुरक्षा</h3>
+                            <div class="tab-cards">
+                                <div class="tab-card">
+                                    <div class="tab-card-icon">
+                                        <i class="fab fa-whatsapp"></i>
+                                    </div>
+                                    <h4>WhatsApp सुरक्षा</h4>
+                                    <p>अनजान नंबर से आए मैसेज पर लिंक पर क्लिक न करें</p>
+                                </div>
+                                <div class="tab-card">
+                                    <div class="tab-card-icon">
+                                        <i class="fab fa-facebook"></i>
+                                    </div>
+                                    <h4>Facebook सुरक्षा</h4>
+                                    <p>अनजान फ्रेंड रिक्वेस्ट स्वीकार न करें और प्राइवेसी सेटिंग्स को चेक करें</p>
+                                </div>
+                                <div class="tab-card">
+                                    <div class="tab-card-icon">
+                                        <i class="fas fa-user-secret"></i>
+                                    </div>
+                                    <h4>फेक प्रोफाइल</h4>
+                                    <p>फेक प्रोफाइल से सावधान रहें और संदिग्ध लिंक पर क्लिक न करें</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane" id="tab-govt">
+                            <h3>सरकारी पहल और रिपोर्टिंग चैनल</h3>
+                            <div class="tab-card">
+                                <div class="tab-card-icon">
+                                    <i class="fas fa-phone-alt"></i>
+                                </div>
+                                <div class="tab-card-content">
+                                    <h4>साइबर फ्रॉड हेल्पलाइन</h4>
+                                    <p>1930 - फ्रॉड रिपोर्ट करने के लिए टोल-फ्री नंबर</p>
+                                    <p>फ्रॉड होने के तुरंत बाद इस नंबर पर कॉल करें</p>
+                                </div>
+                            </div>
+                            <div class="tab-card">
+                                <div class="tab-card-icon">
+                                    <i class="fas fa-globe"></i>
+                                </div>
+                                <div class="tab-card-content">
+                                    <h4>साइबर क्राइम पोर्टल</h4>
+                                    <p><a href="https://cybercrime.gov.in/" target="_blank">cybercrime.gov.in</a></p>
+                                    <p>ऑनलाइन साइबर क्राइम रिपोर्ट करने के लिए आधिकारिक पोर्टल</p>
+                                </div>
+                            </div>
+                            <div class="tab-card">
+                                <div class="tab-card-icon">
+                                    <i class="fas fa-comment-alt"></i>
+                                </div>
+                                <div class="tab-card-content">
+                                    <h4>संदेश (SANDES)</h4>
+                                    <p><a href="https://sandes.gov.in/" target="_blank">sandes.gov.in</a></p>
+                                    <p>सरकारी मैसेजिंग ऐप जिसे NIC द्वारा विकसित किया गया है</p>
+                                    <p>सुरक्षित संचार के लिए भारत सरकार का आधिकारिक ऐप</p>
+                                </div>
+                            </div>
+                            <div class="tab-card">
+                                <div class="tab-card-icon">
+                                    <i class="fas fa-shield-alt"></i>
+                                </div>
+                                <div class="tab-card-content">
+                                    <h4>साइबर स्वच्छता केंद्र</h4>
+                                    <p><a href="https://cyberswachhta.kbcirt.gov.in/" target="_blank">cyberswachhta.in</a></p>
+                                    <p>साइबर सुरक्षा टिप्स और मालवेयर से बचाव के लिए जानकारी</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane" id="tab-password">
+                            <h3>पासवर्ड सुरक्षा</h3>
+                            <div class="tab-cards">
+                                <div class="tab-card">
+                                    <div class="tab-card-icon">
+                                        <i class="fas fa-lock"></i>
+                                    </div>
+                                    <h4>मजबूत पासवर्ड</h4>
+                                    <p>कम से कम 12 अक्षरों का पासवर्ड बनाएं जिसमें अपर केस, लोअर केस, नंबर और स्पेशल कैरेक्टर हों</p>
+                                </div>
+                                <div class="tab-card">
+                                    <div class="tab-card-icon">
+                                        <i class="fas fa-key"></i>
+                                    </div>
+                                    <h4>पासवर्ड मैनेजर</h4>
+                                    <p>पासवर्ड मैनेजर का उपयोग करके अपने सभी पासवर्ड सुरक्षित रखें</p>
+                                </div>
+                                <div class="tab-card">
+                                    <div class="tab-card-icon">
+                                        <i class="fas fa-shield-alt"></i>
+                                    </div>
+                                    <h4>दो-स्तरीय सत्यापन (2FA)</h4>
+                                    <p>अपने अकाउंट्स पर दो-स्तरीय सत्यापन एक्टिवेट करें</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane" id="tab-device">
+                            <h3>डिवाइस सुरक्षा</h3>
+                            <div class="device-security-container">
+                                <div class="device-security-card">
+                                    <div class="device-icon">
+                                        <i class="fas fa-mobile-alt"></i>
+                                    </div>
+                                    <h3>मोबाइल फोन सुरक्षा</h3>
+                                    <ul class="safety-list">
+                                        <li><i class="fas fa-check-circle"></i> स्क्रीन लॉक (पिन, पैटर्न, फिंगरप्रिंट) सेट करें</li>
+                                        <li><i class="fas fa-check-circle"></i> ऑटोमैटिक अपडेट्स चालू रखें</li>
+                                        <li><i class="fas fa-check-circle"></i> केवल ऑफिशियल ऐप स्टोर से ऐप्स डाउनलोड करें</li>
+                                        <li><i class="fas fa-check-circle"></i> ऐप्स के परमिशन चेक करें और सीमित रखें</li>
+                                        <li><i class="fas fa-check-circle"></i> फोन खोने पर ट्रैक और रिमोट वाइप फीचर सेट करें</li>
+                                    </ul>
+                                </div>
+                                
+                                <div class="device-security-card">
+                                    <div class="device-icon">
+                                        <i class="fas fa-laptop"></i>
+                                    </div>
+                                    <h3>कंप्यूटर सुरक्षा</h3>
+                                    <ul class="safety-list">
+                                        <li><i class="fas fa-check-circle"></i> मजबूत पासवर्ड से लॉक स्क्रीन सेट करें</li>
+                                        <li><i class="fas fa-check-circle"></i> ऑपरेटिंग सिस्टम और सॉफ्टवेयर को नियमित रूप से अपडेट करें</li>
+                                        <li><i class="fas fa-check-circle"></i> विश्वसनीय एंटीवायरस सॉफ्टवेयर इंस्टॉल करें</li>
+                                        <li><i class="fas fa-check-circle"></i> फायरवॉल को हमेशा एक्टिव रखें</li>
+                                        <li><i class="fas fa-check-circle"></i> महत्वपूर्ण डेटा का नियमित बैकअप लें</li>
+                                        <li><i class="fas fa-check-circle"></i> अनजान स्रोतों से सॉफ्टवेयर डाउनलोड न करें</li>
+                                    </ul>
+                                </div>
+                                
+                                <div class="device-security-card">
+                                    <div class="device-icon">
+                                        <i class="fas fa-shield-alt"></i>
+                                    </div>
+                                    <h3>एंटीवायरस सुरक्षा</h3>
+                                    <ul class="safety-list">
+                                        <li><i class="fas fa-check-circle"></i> विश्वसनीय एंटीवायरस सॉफ्टवेयर चुनें</li>
+                                        <li><i class="fas fa-check-circle"></i> एंटीवायरस को हमेशा अपडेटेड रखें</li>
+                                        <li><i class="fas fa-check-circle"></i> नियमित रूप से पूरे सिस्टम को स्कैन करें</li>
+                                        <li><i class="fas fa-check-circle"></i> संदिग्ध फाइल्स को तुरंत क्वारंटाइन या डिलीट करें</li>
+                                        <li><i class="fas fa-check-circle"></i> रियल-टाइम प्रोटेक्शन फीचर को हमेशा चालू रखें</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- UPI Safety Section -->
+        <section id="upi-safety" class="section">
+            <div class="container">
+                <div class="section-header">
+                    <h2>सुरक्षित UPI पेमेंट्स</h2>
+                    <p>UPI से पेमेंट करते समय इन सुरक्षा नियमों का पालन करें</p>
+                </div>
+                
+                <div class="upi-info-box">
+                    <h3>UPI क्या है?</h3>
+                    <p>यूनिफाइड पेमेंट्स इंटरफेस (UPI) एक तत्काल रियल-टाइम पेमेंट सिस्टम है जो मोबाइल फोन के माध्यम से बैंक खातों के बीच तुरंत पैसे ट्रांसफर करने की सुविधा देता है। इसे नेशनल पेमेंट्स कॉरपोरेशन ऑफ इंडिया (NPCI) द्वारा विकसित किया गया है।</p>
+                </div>
+                
+                <div class="safety-steps">
+                    <div class="step">
+                        <div class="step-number">1</div>
+                        <div class="step-content">
+                            <h3>QR कोड स्कैन करते समय सावधानी बरतें</h3>
+                            <p>QR कोड स्कैन करने से पहले उसे अच्छे से देख लें और सिर्फ भरोसेमंद जगहों पर ही स्कैन करें। कभी भी अनजान व्यक्तियों द्वारा भेजे गए QR कोड स्कैन न करें।</p>
+                            <div class="warning-box">
+                                <p><strong>सावधानी:</strong> QR कोड स्कैन करते समय ध्यान दें कि आप पैसे भेज रहे हैं या प्राप्त कर रहे हैं। धोखेबाज अक्सर "Collect" QR कोड भेजते हैं जिससे आपके खाते से पैसे निकल जाते हैं।</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="step">
+                        <div class="step-number">2</div>
+                        <div class="step-content">
+                            <h3>पैसे मांगने वाले रिक्वेस्ट को सावधानी से चेक करें</h3>
+                            <p>किसी भी "Request Money" नोटिफिकेशन को एक्सेप्ट करने से पहले अच्छे से चेक करें। सुनिश्चित करें कि रिक्वेस्ट किसने भेजी है और क्यों भेजी है।</p>
+                            <div class="tip-box">
+                                <p><strong>टिप:</strong> UPI ऐप में "Pay" और "Collect" के बीच अंतर समझें। "Pay" का मतलब है आप पैसे भेज रहे हैं, जबकि "Collect" का मतलब है कोई आपसे पैसे मांग रहा है।</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="step">
+                        <div class="step-number">3</div>
+                        <div class="step-content">
+                            <h3>UPI PIN किसी से शेयर न करें</h3>
+                            <p>अपना UPI PIN कभी भी किसी के साथ शेयर न करें, यहां तक कि बैंक के कर्मचारी, कस्टमर केयर या सरकारी अधिकारी के साथ भी नहीं। कोई भी वैध संस्था कभी भी आपका UPI PIN नहीं मांगेगी।</p>
+                            <div class="warning-box">
+                                <p><strong>याद रखें:</strong> UPI PIN आपके डिजिटल हस्ताक्षर के समान है। इसे शेयर करने का मतलब है आप अपने बैंक खाते की चाबी किसी और को दे रहे हैं।</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="step">
+                        <div class="step-number">4</div>
+                        <div class="step-content">
+                            <h3>UPI ID की जांच करें</h3>
+                            <p>पैसे भेजने से पहले रिसीवर की UPI ID की सावधानीपूर्वक जांच करें। UPI ID आमतौर पर username@bankname या phonenumber@upi के फॉर्मेट में होती है।</p>
+                            <div class="tip-box">
+                                <p><strong>सुरक्षित अभ्यास:</strong> पहली बार किसी नए व्यक्ति को पैसे भेजते समय, पहले एक छोटी राशि भेजकर पुष्टि करें कि पैसे सही व्यक्ति को मिल रहे हैं।</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="step">
+                        <div class="step-number">5</div>
+                        <div class="step-content">
+                            <h3>अपने UPI ऐप को अपडेट रखें</h3>
+                            <p>हमेशा अपने UPI ऐप (जैसे Google Pay, PhonePe, Paytm) का नवीनतम वर्जन इस्तेमाल करें। अपडेट में अक्सर महत्वपूर्ण सुरक्षा सुधार शामिल होते हैं।</p>
+                        </div>
+                    </div>
+                    
+                    <div class="step">
+                        <div class="step-number">6</div>
+                        <div class="step-content">
+                            <h3>संदिग्ध लिंक पर क्लिक न करें</h3>
+                            <p>UPI से संबंधित SMS या WhatsApp मैसेज में आए किसी भी लिंक पर क्लिक न करें, खासकर जो KYC अपडेट, अकाउंट ब्लॉक होने या रिवार्ड्स का दावा करते हैं।</p>
+                            <div class="warning-box">
+                                <p><strong>फ्रॉड अलर्ट:</strong> "आपका KYC अपडेट करें वरना आपका UPI बंद हो जाएगा" जैसे मैसेज हमेशा फ्रॉड होते हैं। बैंक या UPI ऐप कभी भी ऐसे मैसेज नहीं भेजते।</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="upi-fraud-types">
+                    <h3>सामान्य UPI फ्रॉड और उनसे बचाव</h3>
+                    <div class="fraud-type">
+                        <h4>1. फर्जी कस्टमर केयर फ्रॉड</h4>
+                        <p>धोखेबाज खुद को बैंक या UPI ऐप का कस्टमर केयर एजेंट बताकर आपसे UPI PIN या OTP मांगते हैं।</p>
+                        <p><strong>बचाव:</strong> कभी भी अपना UPI PIN, OTP, या पासवर्ड किसी कॉल पर शेयर न करें। आधिकारिक हेल्पलाइन नंबर पर ही कॉल करें।</p>
+                    </div>
+                    
+                    <div class="fraud-type">
+                        <h4>2. रिमोट एक्सेस ऐप फ्रॉड</h4>
+                        <p>धोखेबाज आपको AnyDesk या TeamViewer जैसे रिमोट एक्सेस ऐप इंस्टॉल करने के लिए कहते हैं और फिर आपके फोन को रिमोटली एक्सेस करके UPI ट्रांजैक्शन करते हैं।</p>
+                        <p><strong>बचाव:</strong> किसी अनजान व्यक्ति के कहने पर कभी भी रिमोट एक्सेस ऐप इंस्टॉल न करें।</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Social Media Section -->
+        <section id="social-media" class="section">
+            <div class="container">
+                <div class="section-header">
+                    <h2>WhatsApp और Facebook पर ठगी से कैसे बचें</h2>
+                    <p>सोशल मीडिया पर सुरक्षित रहने के टिप्स</p>
+                </div>
+                <div class="social-safety">
+                    <div class="social-platform">
+                        <img src="images/whatsapp-icon.png" alt="WhatsApp" class="platform-icon" id="whatsapp-placeholder">
+                        <h3>WhatsApp सुरक्षा</h3>
+                        <ul class="safety-list">
+                            <li><i class="fas fa-check-circle"></i> अनजान नंबर से आए मैसेज पर लिंक पर क्लिक न करें</li>
+                            <li><i class="fas fa-check-circle"></i> OTP या पासवर्ड कभी शेयर न करें</li>
+                            <li><i class="fas fa-check-circle"></i> दो-स्तरीय सत्यापन (Two-Step Verification) को एक्टिवेट करें</li>
+                            <li><i class="fas fa-check-circle"></i> अपने WhatsApp को अपडेटेड रखें</li>
+                        </ul>
+                    </div>
+                    <div class="social-platform">
+                        <img src="images/facebook-icon.png" alt="Facebook" class="platform-icon" id="facebook-placeholder">
+                        <h3>Facebook सुरक्षा</h3>
+                        <ul class="safety-list">
+                            <li><i class="fas fa-check-circle"></i> मजबूत पासवर्ड का उपयोग करें</li>
+                            <li><i class="fas fa-check-circle"></i> अनजान फ्रेंड रिक्वेस्ट स्वीकार न करें</li>
+                            <li><i class="fas fa-check-circle"></i> प्राइवेसी सेटिंग्स को चेक करें</li>
+                            <li><i class="fas fa-check-circle"></i> फेक प्रोफाइल से सावधान रहें</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Privacy Section -->
+        <section id="privacy" class="section">
+            <div class="container">
+                <div class="section-header">
+                    <h2>मोबाइल प्राइवेसी टिप्स</h2>
+                    <p>अपने मोबाइल फोन को सुरक्षित रखने के तरीके</p>
+                </div>
+                <div class="privacy-tips">
+                    <div class="tip">
+                        <div class="tip-icon">
+                            <i class="fas fa-lock"></i>
+                        </div>
+                        <div class="tip-content">
+                            <h3>स्क्रीन लॉक लगाएं</h3>
+                            <p>अपने फोन पर पासवर्ड, पैटर्न या फिंगरप्रिंट लॉक जरूर लगाएं</p>
+                        </div>
+                    </div>
+                    <div class="tip">
+                        <div class="tip-icon">
+                            <i class="fas fa-wifi"></i>
+                        </div>
+                        <div class="tip-content">
+                            <h3>पब्लिक वाई-फाई से सावधान</h3>
+                            <p>पब्लिक वाई-फाई पर बैंकिंग या शॉपिंग न करें</p>
+                        </div>
+                    </div>
+                    <div class="tip">
+                        <div class="tip-icon">
+                            <i class="fas fa-download"></i>
+                        </div>
+                        <div class="tip-content">
+                            <h3>ऐप्स सावधानी से डाउनलोड करें</h3>
+                            <p>केवल Google Play Store या App Store से ही ऐप्स डाउनलोड करें</p>
+                        </div>
+                    </div>
+                    <div class="tip">
+                        <div class="tip-icon">
+                            <i class="fas fa-shield-alt"></i>
+                        </div>
+                        <div class="tip-content">
+                            <h3>अपडेट्स इंस्टॉल करें</h3>
+                            <p>फोन और ऐप्स के सभी अपडेट्स समय पर इंस्टॉल करें</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Cyber Threats Section -->
+        <section id="cyber-threats" class="section">
+            <div class="container">
+                <div class="section-header">
+                    <h2>साइबर खतरे: आम खतरों को समझें</h2>
+                    <p>मोबाइल और कंप्यूटर में आने वाले खतरों से कैसे बचें</p>
+                </div>
+                
+                <div class="simple-explanation">
+                    <h3>साइबर खतरे क्या हैं?</h3>
+                    <p>साइबर खतरे ऐसे तरीके हैं जिनसे हैकर्स आपके मोबाइल या कंप्यूटर में घुसकर आपकी जानकारी चुरा सकते हैं या आपको नुकसान पहुंचा सकते हैं। ये खतरे अक्सर छिपे होते हैं और आपको पता भी नहीं चलता कि आप इनका शिकार हो गए हैं।</p>
+                </div>
+                
+                <div class="threats-container">
+                    <div class="threat-card">
+                        <div class="threat-icon">
+                            <i class="fas fa-bug"></i>
+                        </div>
+                        <h3>हानिकारक सॉफ्टवेयर (मालवेयर)</h3>
+                        <p>ये ऐसे प्रोग्राम हैं जो आपके फोन या कंप्यूटर में छिपकर आपकी जानकारी चुराते हैं या आपके डिवाइस को धीमा कर देते हैं।</p>
+                        <div class="real-example">
+                            <h4>उदाहरण:</h4>
+                            <p>आपको एक मैसेज आता है कि "आपने ₹10,000 का इनाम जीता है, इस लिंक पर क्लिक करें"। जब आप क्लिक करते हैं, तो आपके फोन में एक छिपा हुआ प्रोग्राम इंस्टॉल हो जाता है जो आपके बैंक डिटेल्स चुरा लेता है।</p>
+                        </div>
+                        <div class="threat-tips">
+                            <h4>बचाव के आसान उपाय:</h4>
+                            <ul>
+                                <li><i class="fas fa-check-circle"></i> केवल Play Store या App Store से ही ऐप्स डाउनलोड करें</li>
+                                <li><i class="fas fa-check-circle"></i> अनजान लिंक पर क्लिक न करें, खासकर जो बड़े इनाम या ऑफर का वादा करते हों</li>
+                                <li><i class="fas fa-check-circle"></i> अपने फोन को नियमित रूप से अपडेट करें</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="threat-card">
+                        <div class="threat-icon">
+                            <i class="fas fa-fish"></i>
+                        </div>
+                        <h3>फिशिंग धोखाधड़ी</h3>
+                        <p>इसमें हैकर्स आपको फर्जी मैसेज या ईमेल भेजकर आपकी निजी जानकारी मांगते हैं, जैसे पासवर्ड या बैंक डिटेल्स।</p>
+                        <div class="real-example">
+                            <h4>उदाहरण:</h4>
+                            <p>आपको एक SMS आता है: "आपका SBI अकाउंट बंद होने वाला है, अपना KYC अपडेट करें" और एक लिंक दिया होता है। यह बैंक से नहीं बल्कि धोखेबाजों से आया मैसेज होता है।</p>
+                        </div>
+                        <div class="threat-tips">
+                            <h4>बचाव के आसान उपाय:</h4>
+                            <ul>
+                                <li><i class="fas fa-check-circle"></i> बैंक या सरकारी संस्थाओं के नाम से आए मैसेज पर तुरंत विश्वास न करें</li>
+                                <li><i class="fas fa-check-circle"></i> पासवर्ड या OTP कभी भी किसी को न बताएं, चाहे वो बैंक से ही क्यों न कहे</li>
+                                <li><i class="fas fa-check-circle"></i> अगर कोई मैसेज डराता है या जल्दबाजी करने को कहता है, तो वह संदिग्ध है</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="threat-card">
+                        <div class="threat-icon">
+                            <i class="fas fa-lock"></i>
+                        </div>
+                        <h3>रैनसमवेयर</h3>
+                        <p>यह एक प्रकार का मालवेयर है जो आपके फोन या कंप्यूटर को लॉक कर देता है और आपसे पैसे मांगता है।</p>
+                        <div class="real-example">
+                            <h4>उदाहरण:</h4>
+                            <p>आप एक अनजान ऐप डाउनलोड करते हैं और अचानक आपके फोन की सभी फोटो और फाइल्स तक पहुंच बंद हो जाती है। स्क्रीन पर एक मैसेज आता है कि अपनी फाइल्स वापस पाने के लिए क्रिप्टोकरेंसी में पैसे भेजें।</p>
+                        </div>
+                        <div class="threat-tips">
+                            <h4>बचाव के आसान उपाय:</h4>
+                            <ul>
+                                <li><i class="fas fa-check-circle"></i> अपने महत्वपूर्ण डेटा का बैकअप रखें (Google Photos, Google Drive में)</li>
+                                <li><i class="fas fa-check-circle"></i> अनजान स्रोतों से ऐप्स या फाइल्स डाउनलोड न करें</li>
+                                <li><i class="fas fa-check-circle"></i> अपने डिवाइस को नियमित रूप से अपडेट करें</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="threat-card">
+                        <div class="threat-icon">
+                            <i class="fas fa-user-secret"></i>
+                        </div>
+                        <h3>फर्जी कॉल और मैसेज</h3>
+                        <p>धोखेबाज अक्सर बैंक, सरकारी अधिकारी या पुलिस अधिकारी बनकर कॉल करते हैं और आपसे पैसे या जानकारी मांगते हैं।</p>
+                        <div class="real-example">
+                            <h4>उदाहरण:</h4>
+                            <p>आपको एक कॉल आती है जिसमें कॉलर खुद को "RBI अधिकारी" बताता है और कहता है कि आपके नाम से दूसरे शहर में एक अकाउंट खुला है जिसमें से पैसे निकाले जा रहे हैं। वह आपसे OTP या अकाउंट डिटेल्स मांगता है।</p>
+                        </div>
+                        <div class="threat-tips">
+                            <h4>बचाव के आसान उपाय:</h4>
+                            <ul>
+                                <li><i class="fas fa-check-circle"></i> किसी भी अनजान कॉलर को अपना OTP, पासवर्ड या बैंक डिटेल्स न दें</li>
+                                <li><i class="fas fa-check-circle"></i> अगर कोई खुद को सरकारी अधिकारी बताता है, तो उसका नाम और ID नंबर पूछें और आधिकारिक नंबर पर वापस कॉल करें</li>
+                                <li><i class="fas fa-check-circle"></i> अगर कोई आपको डराता है या जल्दबाजी करने को कहता है, तो वह धोखेबाज हो सकता है</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="what-to-do-box">
+                    <h3>अगर आप साइबर फ्रॉड का शिकार हो गए हैं तो क्या करें?</h3>
+                    <ol>
+                        <li><strong>तुरंत रिपोर्ट करें:</strong> साइबर फ्रॉड हेल्पलाइन 1930 पर कॉल करें या <a href="https://cybercrime.gov.in/" target="_blank">cybercrime.gov.in</a> पर शिकायत दर्ज करें</li>
+                        <li><strong>बैंक को सूचित करें:</strong> अगर पैसे गए हैं तो तुरंत अपने बैंक की हेल्पलाइन पर कॉल करें</li>
+                        <li><strong>सबूत रखें:</strong> सभी संदिग्ध मैसेज, कॉल डिटेल्स और स्क्रीनशॉट सेव करें</li>
+                        <li><strong>पासवर्ड बदलें:</strong> अपने सभी महत्वपूर्ण अकाउंट्स के पासवर्ड तुरंत बदल दें</li>
+                    </ol>
+                </div>
+            </div>
+        </section>
+
+        <!-- Visual Guide Section -->
+        <section id="visual-guide" class="section">
+            <div class="container">
+                <div class="section-header">
+                    <h2>सुरक्षित और असुरक्षित मैसेज और वेबसाइट पहचानें</h2>
+                    <p>इन उदाहरणों से सीखें कि धोखाधड़ी वाले मैसेज और वेबसाइट कैसे पहचानें</p>
+                </div>
+
+                <div class="visual-guide-tabs">
+                    <div class="tab-buttons">
+                        <button class="tab-btn active" data-tab="messages">मैसेज और SMS</button>
+                        <button class="tab-btn" data-tab="websites">वेबसाइट</button>
+                        <button class="tab-btn" data-tab="calls">फोन कॉल</button>
+                    </div>
+
+                    <div class="tab-content">
+                        <!-- Messages Tab -->
+                        <div class="tab-pane active" id="messages">
+                            <h3>फर्जी मैसेज कैसे पहचानें</h3>
+                            
+                            <div class="comparison-container">
+                                <div class="comparison-item">
+                                    <div class="comparison-header unsafe">
+                                        <h4><i class="fas fa-times-circle"></i> असुरक्षित मैसेज (फर्जी)</h4>
+                                    </div>
+                                    <div class="message-example unsafe">
+                                        <div class="message-content">
+                                            <p class="message-sender">SBIALERT</p>
+                                            <p class="message-text">आपका SBI खाता 24 घंटे में बंद हो जाएगा। अपना KYC अपडेट करने के लिए इस लिंक पर क्लिक करें: <span class="highlight">bit.ly/sbi-kyc</span></p>
+                                            <p class="message-time">10:45 AM</p>
+                                        </div>
+                                    </div>
+                                    <div class="warning-signs">
+                                        <h5>संदिग्ध संकेत:</h5>
+                                        <ul>
+                                            <li><i class="fas fa-exclamation-triangle"></i> डराने वाला संदेश ("खाता बंद हो जाएगा")</li>
+                                            <li><i class="fas fa-exclamation-triangle"></i> जल्दबाजी करने के लिए दबाव ("24 घंटे में")</li>
+                                            <li><i class="fas fa-exclamation-triangle"></i> शॉर्ट URL (bit.ly) का उपयोग</li>
+                                            <li><i class="fas fa-exclamation-triangle"></i> आधिकारिक बैंक नंबर से नहीं आया</li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                                <div class="comparison-item">
+                                    <div class="comparison-header safe">
+                                        <h4><i class="fas fa-check-circle"></i> सुरक्षित मैसेज (असली)</h4>
+                                    </div>
+                                    <div class="message-example safe">
+                                        <div class="message-content">
+                                            <p class="message-sender">SBI</p>
+                                            <p class="message-text">प्रिय ग्राहक, आपके SBI खाते से ₹5000 का लेनदेन किया गया है। अगर यह आपने नहीं किया है तो हमारी टोल-फ्री हेल्पलाइन 1800-111-111 पर संपर्क करें।</p>
+                                            <p class="message-time">2:30 PM</p>
+                                        </div>
+                                    </div>
+                                    <div class="safety-signs">
+                                        <h5>सुरक्षित संकेत:</h5>
+                                        <ul>
+                                            <li><i class="fas fa-check"></i> आधिकारिक बैंक नंबर से आया</li>
+                                            <li><i class="fas fa-check"></i> कोई लिंक नहीं है</li>
+                                            <li><i class="fas fa-check"></i> आधिकारिक टोल-फ्री नंबर दिया गया है</li>
+                                            <li><i class="fas fa-check"></i> व्यक्तिगत जानकारी नहीं मांगी गई है</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Websites Tab -->
+                        <div class="tab-pane" id="websites">
+                            <h3>फर्जी वेबसाइट कैसे पहचानें</h3>
+                            
+                            <div class="comparison-container">
+                                <div class="comparison-item">
+                                    <div class="comparison-header unsafe">
+                                        <h4><i class="fas fa-times-circle"></i> असुरक्षित वेबसाइट (फर्जी)</h4>
+                                    </div>
+                                    <div class="website-example unsafe">
+                                        <div class="browser-bar">
+                                            <div class="browser-actions">
+                                                <span class="browser-dot"></span>
+                                                <span class="browser-dot"></span>
+                                                <span class="browser-dot"></span>
+                                            </div>
+                                            <div class="browser-address">
+                                                <span class="url-unsafe">http://sbi-india-login.com</span>
+                                            </div>
+                                        </div>
+                                        <div class="website-content">
+                                            <div class="fake-logo">SBI बैंक</div>
+                                            <div class="fake-form">
+                                                <div class="form-field">
+                                                    <label>यूजरनेम</label>
+                                                    <input type="text" disabled>
+                                                </div>
+                                                <div class="form-field">
+                                                    <label>पासवर्ड</label>
+                                                    <input type="password" disabled>
+                                                </div>
+                                                <button class="fake-button">लॉगिन करें</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="warning-signs">
+                                        <h5>संदिग्ध संकेत:</h5>
+                                        <ul>
+                                            <li><i class="fas fa-exclamation-triangle"></i> URL में 'http://' है, 'https://' नहीं (सुरक्षित नहीं)</li>
+                                            <li><i class="fas fa-exclamation-triangle"></i> गलत डोमेन नाम (असली SBI वेबसाइट onlinesbi.com है)</li>
+                                            <li><i class="fas fa-exclamation-triangle"></i> URL में अतिरिक्त शब्द जैसे 'login' जोड़े गए हैं</li>
+                                            <li><i class="fas fa-exclamation-triangle"></i> लॉक आइकन नहीं है</li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                                <div class="comparison-item">
+                                    <div class="comparison-header safe">
+                                        <h4><i class="fas fa-check-circle"></i> सुरक्षित वेबसाइट (असली)</h4>
+                                    </div>
+                                    <div class="website-example safe">
+                                        <div class="browser-bar">
+                                            <div class="browser-actions">
+                                                <span class="browser-dot"></span>
+                                                <span class="browser-dot"></span>
+                                                <span class="browser-dot"></span>
+                                            </div>
+                                            <div class="browser-address">
+                                                <span class="lock-icon"><i class="fas fa-lock"></i></span>
+                                                <span class="url-safe">https://onlinesbi.com</span>
+                                            </div>
+                                        </div>
+                                        <div class="website-content">
+                                            <div class="real-logo">SBI</div>
+                                            <div class="real-form">
+                                                <div class="form-field">
+                                                    <label>यूजरनेम</label>
+                                                    <input type="text" disabled>
+                                                </div>
+                                                <div class="form-field">
+                                                    <label>पासवर्ड</label>
+                                                    <input type="password" disabled>
+                                                </div>
+                                                <button class="real-button">लॉगिन करें</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="safety-signs">
+                                        <h5>सुरक्षित संकेत:</h5>
+                                        <ul>
+                                            <li><i class="fas fa-check"></i> URL में 'https://' है (सुरक्षित कनेक्शन)</li>
+                                            <li><i class="fas fa-check"></i> सही आधिकारिक डोमेन नाम (onlinesbi.com)</li>
+                                            <li><i class="fas fa-check"></i> लॉक आइकन मौजूद है</li>
+                                            <li><i class="fas fa-check"></i> वेबसाइट पेशेवर दिखती है, गलतियां नहीं हैं</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Calls Tab -->
+                        <div class="tab-pane" id="calls">
+                            <h3>फर्जी फोन कॉल कैसे पहचानें</h3>
+                            
+                            <div class="comparison-container">
+                                <div class="comparison-item">
+                                    <div class="comparison-header unsafe">
+                                        <h4><i class="fas fa-times-circle"></i> संदिग्ध कॉल (फर्जी)</h4>
+                                    </div>
+                                    <div class="call-example unsafe">
+                                        <div class="call-content">
+                                            <div class="call-icon"><i class="fas fa-phone-alt"></i></div>
+                                            <p class="call-number">अनजान नंबर (दिल्ली से)</p>
+                                            <p class="call-description">"मैं RBI से बोल रहा हूं। आपके खाते से अवैध लेनदेन हो रहा है। अभी रोकने के लिए हमें आपका OTP बताएं।"</p>
+                                        </div>
+                                    </div>
+                                    <div class="warning-signs">
+                                        <h5>संदिग्ध संकेत:</h5>
+                                        <ul>
+                                            <li><i class="fas fa-exclamation-triangle"></i> RBI कभी भी ग्राहकों को सीधे कॉल नहीं करता</li>
+                                            <li><i class="fas fa-exclamation-triangle"></i> डराने वाला संदेश ("अवैध लेनदेन")</li>
+                                            <li><i class="fas fa-exclamation-triangle"></i> OTP मांगना (कोई भी वैध संस्था कभी OTP नहीं मांगेगी)</li>
+                                            <li><i class="fas fa-exclamation-triangle"></i> जल्दबाजी करने के लिए दबाव ("अभी रोकने के लिए")</li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                                <div class="comparison-item">
+                                    <div class="comparison-header safe">
+                                        <h4><i class="fas fa-check-circle"></i> वैध कॉल (असली)</h4>
+                                    </div>
+                                    <div class="call-example safe">
+                                        <div class="call-content">
+                                            <div class="call-icon"><i class="fas fa-phone-alt"></i></div>
+                                            <p class="call-number">बैंक का आधिकारिक नंबर</p>
+                                            <p class="call-description">"मैं SBI से बोल रहा हूं। हम आपके हाल के लेनदेन की पुष्टि करना चाहते हैं। क्या आपने आज ₹10,000 का लेनदेन किया है?"</p>
+                                        </div>
+                                    </div>
+                                    <div class="safety-signs">
+                                        <h5>सुरक्षित संकेत:</h5>
+                                        <ul>
+                                            <li><i class="fas fa-check"></i> आधिकारिक बैंक नंबर से कॉल</li>
+                                            <li><i class="fas fa-check"></i> कॉलर आपसे OTP या पासवर्ड नहीं मांगता</li>
+                                            <li><i class="fas fa-check"></i> कॉलर आपको जल्दबाजी नहीं कराता</li>
+                                            <li><i class="fas fa-check"></i> कॉलर आपसे केवल हां/ना में जवाब मांगता है</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="safety-action-box">
+                                <h4>अगर आपको संदिग्ध कॉल आती है तो क्या करें:</h4>
+                                <ol>
+                                    <li>कॉल को तुरंत काट दें</li>
+                                    <li>कॉलर को कोई भी व्यक्तिगत जानकारी न दें</li>
+                                    <li>बैंक के आधिकारिक नंबर पर वापस कॉल करके पुष्टि करें</li>
+                                    <li>संदिग्ध कॉल की रिपोर्ट 1930 पर करें</li>
+                                </ol>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Password Security Section -->
+        <section id="password-security" class="section">
+            <div class="container">
+                <div class="section-header">
+                    <h2>पासवर्ड सुरक्षा</h2>
+                    <p>मजबूत पासवर्ड बनाने और उन्हें सुरक्षित रखने के तरीके</p>
+                </div>
+                <div class="password-security-container">
+                    <div class="password-tips">
+                        <h3>मजबूत पासवर्ड के लिए टिप्स</h3>
+                        <ul class="safety-list">
+                            <li><i class="fas fa-check-circle"></i> कम से कम 12 अक्षरों का पासवर्ड बनाएं</li>
+                            <li><i class="fas fa-check-circle"></i> अपर केस, लोअर केस, नंबर और स्पेशल कैरेक्टर का मिश्रण उपयोग करें</li>
+                            <li><i class="fas fa-check-circle"></i> अपना नाम, जन्मतिथि या आसानी से अनुमान लगाए जा सकने वाले शब्दों का उपयोग न करें</li>
+                            <li><i class="fas fa-check-circle"></i> हर अकाउंट के लिए अलग पासवर्ड का उपयोग करें</li>
+                            <li><i class="fas fa-check-circle"></i> पासवर्ड नियमित रूप से बदलते रहें</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Device Security Section -->
+        <section id="device-security" class="section">
+            <div class="container">
+                <div class="section-header">
+                    <h2>डिवाइस सुरक्षा</h2>
+                    <p>अपने मोबाइल फोन और कंप्यूटर को सुरक्षित रखने के तरीके</p>
+                </div>
+                <div class="device-security-container">
+                    <div class="device-security-card">
+                        <div class="device-icon">
+                            <i class="fas fa-mobile-alt"></i>
+                        </div>
+                        <h3>मोबाइल फोन सुरक्षा</h3>
+                        <ul class="safety-list">
+                            <li><i class="fas fa-check-circle"></i> स्क्रीन लॉक (पिन, पैटर्न, फिंगरप्रिंट) सेट करें</li>
+                            <li><i class="fas fa-check-circle"></i> ऑटोमैटिक अपडेट्स चालू रखें</li>
+                            <li><i class="fas fa-check-circle"></i> केवल ऑफिशियल ऐप स्टोर से ऐप्स डाउनलोड करें</li>
+                            <li><i class="fas fa-check-circle"></i> ऐप्स के परमिशन चेक करें और सीमित रखें</li>
+                            <li><i class="fas fa-check-circle"></i> फोन खोने पर ट्रैक और रिमोट वाइप फीचर सेट करें</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="device-security-card">
+                        <div class="device-icon">
+                            <i class="fas fa-laptop"></i>
+                        </div>
+                        <h3>कंप्यूटर सुरक्षा</h3>
+                        <ul class="safety-list">
+                            <li><i class="fas fa-check-circle"></i> मजबूत पासवर्ड से लॉक स्क्रीन सेट करें</li>
+                            <li><i class="fas fa-check-circle"></i> ऑपरेटिंग सिस्टम और सॉफ्टवेयर को नियमित रूप से अपडेट करें</li>
+                            <li><i class="fas fa-check-circle"></i> विश्वसनीय एंटीवायरस सॉफ्टवेयर इंस्टॉल करें</li>
+                            <li><i class="fas fa-check-circle"></i> फायरवॉल को हमेशा एक्टिव रखें</li>
+                            <li><i class="fas fa-check-circle"></i> महत्वपूर्ण डेटा का नियमित बैकअप लें</li>
+                            <li><i class="fas fa-check-circle"></i> अनजान स्रोतों से सॉफ्टवेयर डाउनलोड न करें</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="device-security-card">
+                        <div class="device-icon">
+                            <i class="fas fa-shield-alt"></i>
+                        </div>
+                        <h3>एंटीवायरस सुरक्षा</h3>
+                        <ul class="safety-list">
+                            <li><i class="fas fa-check-circle"></i> विश्वसनीय एंटीवायरस सॉफ्टवेयर चुनें</li>
+                            <li><i class="fas fa-check-circle"></i> एंटीवायरस को हमेशा अपडेटेड रखें</li>
+                            <li><i class="fas fa-check-circle"></i> नियमित रूप से पूरे सिस्टम को स्कैन करें</li>
+                            <li><i class="fas fa-check-circle"></i> संदिग्ध फाइल्स को तुरंत क्वारंटाइन या डिलीट करें</li>
+                            <li><i class="fas fa-check-circle"></i> रियल-टाइम प्रोटेक्शन फीचर को हमेशा चालू रखें</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Safe Browsing Section -->
+        <section id="safe-browsing" class="section">
+            <div class="container">
+                <div class="section-header">
+                    <h2>सुरक्षित इंटरनेट ब्राउज़िंग</h2>
+                    <p>इंटरनेट पर सुरक्षित रहने के तरीके</p>
+                </div>
+                <div class="safe-browsing-container">
+                    <div class="browsing-tips">
+                        <h3>सुरक्षित ब्राउज़िंग के लिए टिप्स</h3>
+                        <ul class="safety-list">
+                            <li><i class="fas fa-check-circle"></i> HTTPS वेबसाइट्स का ही उपयोग करें (URL में लॉक आइकन देखें)</li>
+                            <li><i class="fas fa-check-circle"></i> अनजान वेबसाइट्स पर व्यक्तिगत जानकारी न दें</li>
+                            <li><i class="fas fa-check-circle"></i> पॉप-अप विंडोज़ से सावधान रहें</li>
+                            <li><i class="fas fa-check-circle"></i> ब्राउज़र को अपडेटेड रखें</li>
+                            <li><i class="fas fa-check-circle"></i> संदिग्ध लिंक पर क्लिक न करें</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Government Initiatives Section -->
+        <section id="govt-initiatives" class="section">
+            <div class="container">
+                <div class="section-header">
+                    <h2>सरकारी पहल और रिपोर्टिंग चैनल</h2>
+                    <p class="section-description">भारत सरकार द्वारा साइबर फ्रॉड रिपोर्ट करने के लिए कई पहल शुरू की गई हैं:</p>
+                </div>
+                
+                <div class="initiative-cards">
+                    <div class="initiative-card">
+                        <h3>साइबर फ्रॉड हेल्पलाइन - 1930</h3>
+                        <p>वित्तीय साइबर फ्रॉड रिपोर्ट करने के लिए टोल-फ्री नंबर 1930 पर तुरंत कॉल करें। यह 24x7 उपलब्ध है और जल्दी रिपोर्टिंग से आपके पैसे वापस पाने की संभावना बढ़ जाती है।</p>
+                        <p><strong>कब कॉल करें:</strong> अनधिकृत UPI लेनदेन, फर्जी ऑनलाइन शॉपिंग, निवेश घोटाले या किसी भी वित्तीय धोखाधड़ी के तुरंत बाद।</p>
+                        <a href="https://www.mha.gov.in/en/divisionofmha/cyber-and-information-security-cis-division" class="btn btn-primary" target="_blank">और जानकारी</a>
+                    </div>
+                    <div class="initiative-card">
+                        <h3>साइबर क्राइम पोर्टल</h3>
+                        <p>सभी प्रकार के साइबर अपराध जैसे सोशल मीडिया अपराध, ऑनलाइन धोखाधड़ी, हैकिंग, और बाल यौन शोषण सामग्री से संबंधित शिकायतें दर्ज करने के लिए <a href="https://cybercrime.gov.in/" target="_blank">cybercrime.gov.in</a> पर जाएँ।</p>
+                        <p><strong>विशेषताएँ:</strong> अनाम रिपोर्टिंग, शिकायत ट्रैकिंग, और राज्य पुलिस के साथ सीधा संपर्क।</p>
+                        <a href="https://cybercrime.gov.in/" class="btn btn-primary" target="_blank">और जानकारी</a>
+                    </div>
+                    <div class="initiative-card">
+                        <h3>CERT-In</h3>
+                        <p>भारतीय कंप्यूटर आपातकालीन प्रतिक्रिया टीम (CERT-In) भारत की राष्ट्रीय नोडल एजेंसी है जो साइबर सुरक्षा खतरों से निपटती है।</p>
+                        <p><strong>सेवाएँ:</strong> सुरक्षा अलर्ट, सुभेद्यता नोट्स, सुरक्षा सलाह, और व्हाइट पेपर्स। संगठन और कंपनियां सुरक्षा घटनाओं को <a href="https://www.cert-in.org.in/" target="_blank">cert-in.org.in</a> पर रिपोर्ट कर सकती हैं।</p>
+                        <a href="https://www.cert-in.org.in/" class="btn btn-primary" target="_blank">और जानकारी</a>
+                    </div>
+                    <div class="initiative-card">
+                        <h3>संदेश (SANDES)</h3>
+                        <p>भारत सरकार द्वारा विकसित एक सुरक्षित मैसेजिंग ऐप जो व्हाट्सएप का स्वदेशी विकल्प है। यह एंड-टू-एंड एन्क्रिप्शन प्रदान करता है और भारत में होस्ट किया गया है।</p>
+                        <p><strong>विशेषताएँ:</strong> टेक्स्ट, वीडियो और ऑडियो मैसेजिंग, ग्रुप चैट, और सरकारी सेवाओं के साथ एकीकरण। <a href="https://sandes.gov.in/" target="_blank">sandes.gov.in</a> से डाउनलोड करें।</p>
+                        <a href="https://sandes.gov.in/" class="btn btn-primary" target="_blank">और जानकारी</a>
+                    </div>
+                </div>
+                <div class="initiative-cards">
+                    <div class="initiative-card">
+                        <h3>साइबर स्वच्छता केंद्र</h3>
+                        <p>भारत सरकार की पहल जो नागरिकों को मालवेयर संक्रमण से बचाने और सुरक्षित करने के लिए मुफ्त उपकरण और जानकारी प्रदान करती है।</p>
+                        <p><strong>उपलब्ध उपकरण:</strong> बॉटनेट क्लीनिंग, मालवेयर रिमूवल टूल्स, और USB प्रोटेक्शन।</p>
+                        <a href="https://www.cyberswachhtakendra.gov.in/" class="btn btn-primary" target="_blank">और जानकारी</a>
+                    </div>
+                    <div class="initiative-card">
+                        <h3>नेशनल साइबर क्राइम रिपोर्टिंग पोर्टल</h3>
+                        <p>महिलाओं और बच्चों के खिलाफ साइबर अपराधों की रिपोर्टिंग के लिए समर्पित पोर्टल, जिसमें ऑनलाइन उत्पीड़न, साइबर स्टॉकिंग और बाल पोर्नोग्राफी शामिल हैं।</p>
+                        <p><strong>प्राथमिकता:</strong> महिलाओं और बच्चों से संबंधित शिकायतों पर त्वरित कार्रवाई।</p>
+                        <a href="https://cybercrime.gov.in/" class="btn btn-primary" target="_blank">और जानकारी</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Tech Glossary Section -->
+        <section id="tech-glossary" class="section">
+            <div class="container">
+                <div class="section-header">
+                    <h2>टेक्नॉलॉजी शब्दकोश</h2>
+                    <p>नई टेक्नॉलॉजी के शब्दों को आसान भाषा में समझें</p>
+                </div>
+                <div class="glossary-container">
+                    <div class="glossary-item">
+                        <h3>OTP <span class="pronunciation">(ओटीपी)</span></h3>
+                        <p>वन टाइम पासवर्ड - एक बार इस्तेमाल होने वाला कोड जो आपके फोन पर आता है। इसे कभी भी किसी को न बताएं।</p>
+                    </div>
+                    
+                    <div class="glossary-item">
+                        <h3>फिशिंग <span class="pronunciation">(Phishing)</span></h3>
+                        <p>ऐसी धोखाधड़ी जिसमें हैकर्स आपसे व्यक्तिगत जानकारी प्राप्त करने के लिए विश्वसनीय संस्थाओं का रूप धारण करते हैं।</p>
+                    </div>
+                    
+                    <div class="glossary-item">
+                        <h3>मालवेयर <span class="pronunciation">(Malware)</span></h3>
+                        <p>दुर्भावनापूर्ण सॉफ्टवेयर जो आपके डिवाइस को नुकसान पहुंचाता है। इसमें वायरस, वर्म्स, ट्रोजन और रैनसमवेयर शामिल हैं।</p>
+                    </div>
+                    
+                    <div class="glossary-item">
+                        <h3>VPN <span class="pronunciation">(वीपीएन)</span></h3>
+                        <p>वर्चुअल प्राइवेट नेटवर्क - एक सुरक्षित कनेक्शन जो आपके इंटरनेट ट्रैफिक को एन्क्रिप्ट करता है और आपकी ऑनलाइन गतिविधियों को निजी रखता है।</p>
+                    </div>
+                    
+                    <div class="glossary-item">
+                        <h3>एंटीवायरस <span class="pronunciation">(Antivirus)</span></h3>
+                        <p>ऐसा सॉफ्टवेयर जो आपके डिवाइस को वायरस और अन्य मालवेयर से सुरक्षित रखता है।</p>
+                    </div>
+                    
+                    <div class="glossary-item">
+                        <h3>2FA <span class="pronunciation">(टू-फैक्टर ऑथेंटिकेशन)</span></h3>
+                        <p>दो-स्तरीय सत्यापन - एक सुरक्षा प्रक्रिया जिसमें लॉगिन के लिए पासवर्ड के अलावा एक अतिरिक्त सत्यापन की आवश्यकता होती है।</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- News and Updates Section -->
+        <section id="news-updates" class="section">
+            <div class="container">
+                <div class="section-header">
+                    <h2>नवीनतम अपडेट और समाचार</h2>
+                    <p>साइबर सुरक्षा से जुड़ी ताज़ा जानकारी और समाचार</p>
+                </div>
+
+                <div class="news-tabs">
+                    <div class="news-tab-buttons">
+                        <button class="news-tab-btn active" data-news="latest">नवीनतम अपडेट</button>
+                        <button class="news-tab-btn" data-news="alerts">सुरक्षा अलर्ट</button>
+                        <button class="news-tab-btn" data-news="blogs">ब्लॉग</button>
+                    </div>
+
+                    <div class="news-content">
+                        <!-- Latest Updates Tab -->
+                        <div class="news-pane active" id="latest">
+                            <div class="news-grid">
+                                <div class="news-card">
+                                    <div class="news-date">
+                                        <span class="day">15</span>
+                                        <span class="month">जून</span>
+                                        <span class="year">2023</span>
+                                    </div>
+                                    <div class="news-details">
+                                        <h3>UPI फ्रॉड में 45% की वृद्धि, सावधानी बरतें</h3>
+                                        <p>हाल के आंकड़ों के अनुसार, UPI से जुड़े फ्रॉड में पिछले 6 महीनों में 45% की वृद्धि हुई है। विशेष रूप से फर्जी कस्टमर केयर कॉल और QR कोड स्कैम में बढ़ोतरी देखी गई है।</p>
+                                        <div class="news-tags">
+                                            <span class="tag">UPI सुरक्षा</span>
+                                            <span class="tag">फ्रॉड अलर्ट</span>
+                                        </div>
+                                        <a href="#" class="read-more">पूरा पढ़ें <i class="fas fa-arrow-right"></i></a>
+                                    </div>
+                                </div>
+
+                                <div class="news-card">
+                                    <div class="news-date">
+                                        <span class="day">10</span>
+                                        <span class="month">जून</span>
+                                        <span class="year">2023</span>
+                                    </div>
+                                    <div class="news-details">
+                                        <h3>सरकार ने लॉन्च किया नया साइबर सुरक्षा पोर्टल</h3>
+                                        <p>भारत सरकार ने नागरिकों के लिए एक नया साइबर सुरक्षा पोर्टल लॉन्च किया है, जिसमें रियल-टाइम अलर्ट और शिकायत दर्ज करने की सुविधा है। इस पोर्टल पर 12 भारतीय भाषाओं में जानकारी उपलब्ध है।</p>
+                                        <div class="news-tags">
+                                            <span class="tag">सरकारी पहल</span>
+                                            <span class="tag">नया लॉन्च</span>
+                                        </div>
+                                        <a href="#" class="read-more">पूरा पढ़ें <i class="fas fa-arrow-right"></i></a>
+                                    </div>
+                                </div>
+
+                                <div class="news-card">
+                                    <div class="news-date">
+                                        <span class="day">05</span>
+                                        <span class="month">जून</span>
+                                        <span class="year">2023</span>
+                                    </div>
+                                    <div class="news-details">
+                                        <h3>WhatsApp पर नया स्कैम: फर्जी लॉटरी मैसेज से सावधान</h3>
+                                        <p>WhatsApp पर एक नया स्कैम सामने आया है जिसमें फर्जी लॉटरी जीतने के मैसेज भेजे जा रहे हैं। इन मैसेज में लिंक पर क्लिक करने से आपका फोन हैक हो सकता है या आपकी व्यक्तिगत जानकारी चोरी हो सकती है।</p>
+                                        <div class="news-tags">
+                                            <span class="tag">WhatsApp सुरक्षा</span>
+                                            <span class="tag">स्कैम अलर्ट</span>
+                                        </div>
+                                        <a href="#" class="read-more">पूरा पढ़ें <i class="fas fa-arrow-right"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Security Alerts Tab -->
+                        <div class="news-pane" id="alerts">
+                            <div class="alert-list">
+                                <div class="alert-item high">
+                                    <div class="alert-severity">
+                                        <span class="severity-indicator"></span>
+                                        <span class="severity-text">उच्च जोखिम</span>
+                                    </div>
+                                    <div class="alert-info">
+                                        <h3>Android फोन के लिए नया मालवेयर सक्रिय</h3>
+                                        <p class="alert-date">20 जून, 2023</p>
+                                        <p>एक नया मालवेयर "BankDropper" Android फोन पर बैंकिंग ऐप्स को टारगेट कर रहा है। यह मालवेयर फर्जी अपडेट के रूप में आता है और आपके बैंकिंग डिटेल्स चुरा सकता है।</p>
+                                        <div class="alert-action">
+                                            <p><strong>क्या करें:</strong> अपने फोन को तुरंत अपडेट करें, अनजान स्रोतों से ऐप्स इंस्टॉल न करें, और अपने बैंकिंग ऐप्स के पासवर्ड बदलें।</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="alert-item medium">
+                                    <div class="alert-severity">
+                                        <span class="severity-indicator"></span>
+                                        <span class="severity-text">मध्यम जोखिम</span>
+                                    </div>
+                                    <div class="alert-info">
+                                        <h3>फर्जी इनकम टैक्स रिफंड ईमेल</h3>
+                                        <p class="alert-date">15 जून, 2023</p>
+                                        <p>इनकम टैक्स रिफंड के नाम पर फर्जी ईमेल भेजे जा रहे हैं। इन ईमेल में आपसे बैंक डिटेल्स और पैन कार्ड नंबर मांगा जाता है।</p>
+                                        <div class="alert-action">
+                                            <p><strong>क्या करें:</strong> ऐसे ईमेल पर कभी भी क्लिक न करें। इनकम टैक्स डिपार्टमेंट कभी भी ईमेल के जरिए बैंक डिटेल्स नहीं मांगता है।</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="alert-item low">
+                                    <div class="alert-severity">
+                                        <span class="severity-indicator"></span>
+                                        <span class="severity-text">निम्न जोखिम</span>
+                                    </div>
+                                    <div class="alert-info">
+                                        <h3>फेसबुक प्रोफाइल क्लोनिंग</h3>
+                                        <p class="alert-date">10 जून, 2023</p>
+                                        <p>फेसबुक पर प्रोफाइल क्लोनिंग के मामले बढ़ रहे हैं, जहां हैकर्स आपकी प्रोफाइल की नकल बनाकर आपके दोस्तों को फ्रेंड रिक्वेस्ट भेजते हैं।</p>
+                                        <div class="alert-action">
+                                            <p><strong>क्या करें:</strong> अपनी प्राइवेसी सेटिंग्स चेक करें, दो-स्तरीय सत्यापन सक्रिय करें, और अनजान फ्रेंड रिक्वेस्ट स्वीकार न करें।</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Blogs Tab -->
+                        <div class="news-pane" id="blogs">
+                            <div class="blog-grid">
+                                <div class="blog-card">
+                                    <div class="blog-image">
+                                        <img src="https://via.placeholder.com/300x200?text=Cyber+Security" alt="साइबर सुरक्षा ब्लॉग">
+                                    </div>
+                                    <div class="blog-content">
+                                        <div class="blog-meta">
+                                            <span class="blog-author"><i class="fas fa-user"></i> राजेश शर्मा</span>
+                                            <span class="blog-date"><i class="fas fa-calendar-alt"></i> 18 जून, 2023</span>
+                                        </div>
+                                        <h3>ग्रामीण क्षेत्रों में बढ़ते साइबर फ्रॉड और बचाव के उपाय</h3>
+                                        <p>हाल के वर्षों में ग्रामीण क्षेत्रों में साइबर फ्रॉड के मामले तेजी से बढ़े हैं। इस ब्लॉग में हम जानेंगे कि ग्रामीण इलाकों में किस प्रकार के फ्रॉड हो रहे हैं और उनसे कैसे बचा जा सकता है।</p>
+                                        <a href="#" class="read-more">पूरा पढ़ें <i class="fas fa-arrow-right"></i></a>
+                                    </div>
+                                </div>
+
+                                <div class="blog-card">
+                                    <div class="blog-image">
+                                        <img src="https://via.placeholder.com/300x200?text=UPI+Safety" alt="UPI सुरक्षा ब्लॉग">
+                                    </div>
+                                    <div class="blog-content">
+                                        <div class="blog-meta">
+                                            <span class="blog-author"><i class="fas fa-user"></i> प्रिया पटेल</span>
+                                            <span class="blog-date"><i class="fas fa-calendar-alt"></i> 12 जून, 2023</span>
+                                        </div>
+                                        <h3>UPI पेमेंट्स: सुरक्षित लेनदेन के 10 सुनहरे नियम</h3>
+                                        <p>UPI पेमेंट्स आज के समय में बहुत लोकप्रिय हो गए हैं, लेकिन इनसे जुड़े फ्रॉड भी बढ़ रहे हैं। इस ब्लॉग में हम UPI से पेमेंट करते समय ध्यान रखने योग्य 10 महत्वपूर्ण नियमों के बारे में बताएंगे।</p>
+                                        <a href="#" class="read-more">पूरा पढ़ें <i class="fas fa-arrow-right"></i></a>
+                                    </div>
+                                </div>
+
+                                <div class="blog-card">
+                                    <div class="blog-image">
+                                        <img src="https://via.placeholder.com/300x200?text=Password+Security" alt="पासवर्ड सुरक्षा ब्लॉग">
+                                    </div>
+                                    <div class="blog-content">
+                                        <div class="blog-meta">
+                                            <span class="blog-author"><i class="fas fa-user"></i> अमित सिंह</span>
+                                            <span class="blog-date"><i class="fas fa-calendar-alt"></i> 05 जून, 2023</span>
+                                        </div>
+                                        <h3>मजबूत पासवर्ड कैसे बनाएं और याद रखें</h3>
+                                        <p>मजबूत पासवर्ड आपके अकाउंट्स की सुरक्षा की पहली लाइन है। इस ब्लॉग में हम बताएंगे कि कैसे आप मजबूत पासवर्ड बना सकते हैं और उन्हें आसानी से याद रख सकते हैं, बिना कहीं लिखे।</p>
+                                        <a href="#" class="read-more">पूरा पढ़ें <i class="fas fa-arrow-right"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="view-all-container">
+                                <a href="#" class="btn primary-btn">सभी ब्लॉग देखें</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="subscribe-box">
+                    <h3>नवीनतम अपडेट्स के लिए सब्सक्राइब करें</h3>
+                    <p>साइबर सुरक्षा से जुड़ी नवीनतम जानकारी और अलर्ट सीधे अपने ईमेल पर पाएं</p>
+                    <form class="subscribe-form">
+                        <input type="email" placeholder="अपना ईमेल एड्रेस दर्ज करें" required>
+                        <button type="submit" class="btn primary-btn">सब्सक्राइब करें</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="section">
+            <div class="container">
+                <div class="section-header">
+                    <h2>संपर्क करें</h2>
+                    <p>फ्रॉड रिपोर्ट करें या सहायता के लिए संपर्क करें</p>
+                </div>
+                <div class="contact-container">
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <div>
+                                <h3>फ्रॉड रिपोर्ट हेल्पलाइन</h3>
+                                <p>1930 या 155260</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <div>
+                                <h3>ईमेल</h3>
+                                <p>help@cybersuraksha.com</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-globe"></i>
+                            <div>
+                                <h3>साइबर क्राइम पोर्टल</h3>
+                                <p><a href="https://cybercrime.gov.in/" target="_blank">cybercrime.gov.in</a></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="contact-form">
+                        <form id="fraud-report-form">
+                            <div class="form-group">
+                                <label for="name">नाम</label>
+                                <input type="text" id="name" name="name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="phone">फोन नंबर</label>
+                                <input type="tel" id="phone" name="phone" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">ईमेल (वैकल्पिक)</label>
+                                <input type="email" id="email" name="email">
+                            </div>
+                            <div class="form-group">
+                                <label for="fraud-type">फ्रॉड का प्रकार</label>
+                                <select id="fraud-type" name="fraud-type" required>
+                                    <option value="">चुनें</option>
+                                    <option value="upi">UPI फ्रॉड</option>
+                                    <option value="call">फोन कॉल फ्रॉड</option>
+                                    <option value="social">सोशल मीडिया फ्रॉड</option>
+                                    <option value="other">अन्य</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="message">विवरण</label>
+                                <textarea id="message" name="message" rows="4" required></textarea>
+                            </div>
+                            <button type="submit" class="btn primary-btn">रिपोर्ट भेजें</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>साइबर सुरक्षा जागरूकता</h3>
+                    <p>अपनी डिजिटल सुरक्षा खुद करें और अपनी जानकारी सुरक्षित रखें</p>
+                </div>
+                <div class="footer-section">
+                    <h3>संपर्क करें</h3>
+                    <ul>
+                        <li><i class="fas fa-phone"></i> 1930 या 155260</li>
+                        <li><i class="fas fa-envelope"></i> help@cybersuraksha.com</li>
+                        <li><i class="fas fa-globe"></i> <a href="https://cybercrime.gov.in/" target="_blank">cybercrime.gov.in</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>फोलो ऑनलाइन</h3>
+                    <ul class="social-icons">
+                        <li><a href="#" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
+                        <li><a href="#" target="_blank"><i class="fab fa-twitter"></i></a></li>
+                        <li><a href="#" target="_blank"><i class="fab fa-instagram"></i></a></li>
+                        <li><a href="#" target="_blank"><i class="fab fa-linkedin-in"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    
+    <script>
+        // Close alert banner
+        document.getElementById('close-alert').addEventListener('click', function() {
+            document.getElementById('alert-banner').style.display = 'none';
+        });
+
+        // Visual Guide Tabs
+        document.addEventListener('DOMContentLoaded', function() {
+            const tabButtons = document.querySelectorAll('.visual-guide-tabs .tab-btn');
+            
+            tabButtons.forEach(button => {
+                button.addEventListener('click', function() {
+                    // Remove active class from all buttons
+                    tabButtons.forEach(btn => btn.classList.remove('active'));
+                    
+                    // Add active class to clicked button
+                    this.classList.add('active');
+                    
+                    // Hide all tab panes
+                    const tabPanes = document.querySelectorAll('.visual-guide-tabs .tab-pane');
+                    tabPanes.forEach(pane => pane.classList.remove('active'));
+                    
+                    // Show the corresponding tab pane
+                    const tabId = this.getAttribute('data-tab');
+                    document.getElementById(tabId).classList.add('active');
+                });
+            });
+        });
+
+        // Step-by-Step Guide Tabs
+        document.addEventListener('DOMContentLoaded', function() {
+            const guideTabButtons = document.querySelectorAll('.guide-tab-btn');
+            
+            guideTabButtons.forEach(button => {
+                button.addEventListener('click', function() {
+                    // Remove active class from all buttons
+                    guideTabButtons.forEach(btn => btn.classList.remove('active'));
+                    
+                    // Add active class to clicked button
+                    this.classList.add('active');
+                    
+                    // Hide all guide panes
+                    const guidePanes = document.querySelectorAll('.guide-pane');
+                    guidePanes.forEach(pane => pane.classList.remove('active'));
+                    
+                    // Show the corresponding guide pane
+                    const guideId = this.getAttribute('data-guide');
+                    document.getElementById(guideId).classList.add('active');
+                });
+            });
+        });
+
+        // Quick Access Tabs
+        document.addEventListener('DOMContentLoaded', function() {
+            const quickAccessTabButtons = document.querySelectorAll('.tabs .tab-btn');
+            
+            quickAccessTabButtons.forEach(button => {
+                button.addEventListener('click', function() {
+                    // Remove active class from all buttons
+                    quickAccessTabButtons.forEach(btn => btn.classList.remove('active'));
+                    
+                    // Add active class to clicked button
+                    this.classList.add('active');
+                    
+                    // Hide all tab panes
+                    const tabPanes = document.querySelectorAll('.tab-content .tab-pane');
+                    tabPanes.forEach(pane => pane.classList.remove('active'));
+                    
+                    // Show the corresponding tab pane
+                    const tabId = this.getAttribute('data-tab');
+                    document.getElementById(tabId).classList.add('active');
+                });
+            });
+        });
+    </script>
+</body>
+</html> 

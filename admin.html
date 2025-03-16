@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>एडमिन पैनल | साइबर सुरक्षा</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="admin.css">
+</head>
+<body>
+    <header class="admin-header">
+        <div class="container">
+            <div class="logo">
+                <img src="images/logo.png" alt="साइबर सुरक्षा लोगो" id="logo-placeholder">
+                <h1>साइबर सुरक्षा - एडमिन पैनल</h1>
+            </div>
+            <div>
+                <div class="theme-switch-wrapper">
+                    <span class="slider-icon"><i class="fas fa-sun"></i></span>
+                    <label class="theme-switch" for="admin-checkbox">
+                        <input type="checkbox" id="admin-checkbox" />
+                        <div class="slider round"></div>
+                    </label>
+                    <span class="slider-icon"><i class="fas fa-moon"></i></span>
+                </div>
+                <span class="admin-user"><i class="fas fa-user-shield"></i> Admin</span>
+                <button id="logout-btn" class="btn admin-logout">लॉगआउट</button>
+            </div>
+        </div>
+    </header>
+
+    <main class="admin-main">
+        <div class="container">
+            <div class="admin-tabs">
+                <div class="admin-tab active" data-tab="dashboard">डैशबोर्ड</div>
+                <div class="admin-tab" data-tab="alerts">अलर्ट्स</div>
+                <div class="admin-tab" data-tab="blogs">ब्लॉग्स</div>
+                <div class="admin-tab" data-tab="videos">वीडियोज</div>
+                <div class="admin-tab" data-tab="reports">रिपोर्ट्स</div>
+                <div class="admin-tab" data-tab="settings">सेटिंग्स</div>
+            </div>
+
+            <div class="admin-content">
+                <!-- Dashboard Section -->
+                <div class="admin-section active" id="dashboard-section">
+                    <h2>डैशबोर्ड</h2>
+                    <div class="dashboard-stats">
+                        <div class="stat-card">
+                            <div class="stat-icon">
+                                <i class="fas fa-eye"></i>
+                            </div>
+                            <div class="stat-content">
+                                <h3>कुल विज़िटर्स</h3>
+                                <p class="stat-number">5,280</p>
+                                <p class="stat-change positive">+12% पिछले महीने से</p>
+                            </div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-icon">
+                                <i class="fas fa-file-alt"></i>
+                            </div>
+                            <div class="stat-content">
+                                <h3>कुल ब्लॉग्स</h3>
+                                <p class="stat-number">24</p>
+                                <p class="stat-change positive">+3 पिछले महीने से</p>
+                            </div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-icon">
+                                <i class="fas fa-video"></i>
+                            </div>
+                            <div class="stat-content">
+                                <h3>कुल वीडियोज</h3>
+                                <p class="stat-number">18</p>
+                                <p class="stat-change positive">+2 पिछले महीने से</p>
+                            </div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-icon">
+                                <i class="fas fa-exclamation-triangle"></i>
+                            </div>
+                            <div class="stat-content">
+                                <h3>फ्रॉड रिपोर्ट्स</h3>
+                                <p class="stat-number">42</p>
+                                <p class="stat-change negative">+8 पिछले महीने से</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="recent-activity">
+                        <h3>हाल की गतिविधियां</h3>
+                        <div class="activity-list">
+                            <div class="activity-item">
+                                <div class="activity-icon">
+                                    <i class="fas fa-file-alt"></i>
+                                </div>
+                                <div class="activity-content">
+                                    <p class="activity-text">नया ब्लॉग पोस्ट किया गया: "UPI फ्रॉड के नए तरीके और उनसे बचने के उपाय"</p>
+                                    <p class="activity-time">2 घंटे पहले</p>
+                                </div>
+                            </div>
+                            <div class="activity-item">
+                                <div class="activity-icon">
+                                    <i class="fas fa-video"></i>
+                                </div>
+                                <div class="activity-content">
+                                    <p class="activity-text">नया वीडियो अपलोड किया गया: "फोन कॉल फ्रॉड से कैसे बचें"</p>
+                                    <p class="activity-time">5 घंटे पहले</p>
+                                </div>
+                            </div>
+                            <div class="activity-item">
+                                <div class="activity-icon">
+                                    <i class="fas fa-exclamation-triangle"></i>
+                                </div>
+                                <div class="activity-content">
+                                    <p class="activity-text">नई फ्रॉड रिपोर्ट प्राप्त हुई: "UPI फ्रॉड"</p>
+                                    <p class="activity-time">1 दिन पहले</p>
+                                </div>
+                            </div>
+                            <div class="activity-item">
+                                <div class="activity-icon">
+                                    <i class="fas fa-bell"></i>
+                                </div>
+                                <div class="activity-content">
+                                    <p class="activity-text">नया अलर्ट जारी किया गया: "नया UPI स्कैम चल रहा है"</p>
+                                    <p class="activity-time">2 दिन पहले</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Alerts Section -->
+                <div class="admin-section" id="alerts-section">
+                    <h2>अलर्ट्स मैनेजमेंट</h2>
+                    <div class="admin-card">
+                        <h3>नया अलर्ट जोड़ें</h3>
+                        <form id="add-alert-form">
+                            <div class="admin-form-group">
+                                <label for="alert-title">अलर्ट टाइटल</label>
+                                <input type="text" id="alert-title" name="alert-title" required>
+                            </div>
+                            <div class="admin-form-group">
+                                <label for="alert-message">अलर्ट मैसेज</label>
+                                <textarea id="alert-message" name="alert-message" required></textarea>
+                            </div>
+                            <div class="admin-form-group">
+                                <label for="alert-type">अलर्ट टाइप</label>
+                                <select id="alert-type" name="alert-type" required>
+                                    <option value="warning">वार्निंग</option>
+                                    <option value="danger">डेंजर</option>
+                                    <option value="info">इन्फो</option>
+                                </select>
+                            </div>
+                            <div class="admin-form-group">
+                                <label for="alert-active">एक्टिव</label>
+                                <input type="checkbox" id="alert-active" name="alert-active" checked>
+                            </div>
+                            <div class="admin-actions">
+                                <button type="submit" class="btn primary-btn">अलर्ट जोड़ें</button>
+                            </div>
+                        </form>
+                    </div>
+
+                    <h3>मौजूदा अलर्ट्स</h3>
+                    <table class="admin-table">
+                        <thead>
+                            <tr>
+                                <th>टाइटल</th>
+                                <th>मैसेज</th>
+                                <th>टाइप</th>
+                                <th>स्टेटस</th>
+                                <th>एक्शन्स</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>UPI स्कैम अलर्ट</td>
+                                <td>नया UPI स्कैम चल रहा है। किसी को भी अपना OTP न बताएं।</td>
+                                <td>वार्निंग</td>
+                                <td>एक्टिव</td>
+                                <td>
+                                    <button class="admin-action-btn edit-btn">एडिट</button>
+                                    <button class="admin-action-btn delete-btn">डिलीट</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>फिशिंग अटैक अलर्ट</td>
+                                <td>नए फिशिंग अटैक्स की रिपोर्ट्स आ रही हैं। अनजान लिंक्स पर क्लिक न करें।</td>
+                                <td>डेंजर</td>
+                                <td>इनएक्टिव</td>
+                                <td>
+                                    <button class="admin-action-btn edit-btn">एडिट</button>
+                                    <button class="admin-action-btn delete-btn">डिलीट</button>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <!-- Blogs Section -->
+                <div class="admin-section" id="blogs-section">
+                    <h2>ब्लॉग्स मैनेजमेंट</h2>
+                    <div class="admin-card">
+                        <h3>नया ब्लॉग पोस्ट जोड़ें</h3>
+                        <form id="add-blog-form">
+                            <div class="admin-form-group">
+                                <label for="blog-title">ब्लॉग टाइटल</label>
+                                <input type="text" id="blog-title" name="blog-title" required>
+                            </div>
+                            <div class="admin-form-group">
+                                <label for="blog-content">ब्लॉग कंटेंट</label>
+                                <textarea id="blog-content" name="blog-content" required></textarea>
+                            </div>
+                            <div class="admin-form-group">
+                                <label for="blog-image">ब्लॉग इमेज</label>
+                                <input type="file" id="blog-image" name="blog-image" accept="image/*" required>
+                            </div>
+                            <div class="admin-form-group">
+                                <label for="blog-category">कैटेगरी</label>
+                                <select id="blog-category" name="blog-category" required>
+                                    <option value="upi">UPI फ्रॉड</option>
+                                    <option value="call">फोन कॉल फ्रॉड</option>
+                                    <option value="social">सोशल मीडिया फ्रॉड</option>
+                                    <option value="privacy">प्राइवेसी टिप्स</option>
+                                    <option value="other">अन्य</option>
+                                </select>
+                            </div>
+                            <div class="admin-actions">
+                                <button type="submit" class="btn primary-btn">ब्लॉग पोस्ट करें</button>
+                            </div>
+                        </form>
+                    </div>
+
+                    <h3>मौजूदा ब्लॉग्स</h3>
+                    <table class="admin-table">
+                        <thead>
+                            <tr>
+                                <th>टाइटल</th>
+                                <th>कैटेगरी</th>
+                                <th>डेट</th>
+                                <th>एक्शन्स</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>UPI फ्रॉड के नए तरीके और उनसे बचने के उपाय</td>
+                                <td>UPI फ्रॉड</td>
+                                <td>10 जून, 2023</td>
+                                <td>
+                                    <button class="admin-action-btn edit-btn">एडिट</button>
+                                    <button class="admin-action-btn delete-btn">डिलीट</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>फिशिंग अटैक क्या है और इससे कैसे बचें</td>
+                                <td>सोशल मीडिया फ्रॉड</td>
+                                <td>5 जून, 2023</td>
+                                <td>
+                                    <button class="admin-action-btn edit-btn">एडिट</button>
+                                    <button class="admin-action-btn delete-btn">डिलीट</button>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <!-- Videos Section -->
+                <div class="admin-section" id="videos-section">
+                    <h2>वीडियोज मैनेजमेंट</h2>
+                    <div class="admin-card">
+                        <h3>नया वीडियो जोड़ें</h3>
+                        <form id="add-video-form">
+                            <div class="admin-form-group">
+                                <label for="video-title">वीडियो टाइटल</label>
+                                <input type="text" id="video-title" name="video-title" required>
+                            </div>
+                            <div class="admin-form-group">
+                                <label for="video-description">वीडियो डिस्क्रिप्शन</label>
+                                <textarea id="video-description" name="video-description" required></textarea>
+                            </div>
+                            <div class="admin-form-group">
+                                <label for="video-file">वीडियो फाइल</label>
+                                <input type="file" id="video-file" name="video-file" accept="video/*" required>
+                            </div>
+                            <div class="admin-form-group">
+                                <label for="video-thumbnail">वीडियो थंबनेल</label>
+                                <input type="file" id="video-thumbnail" name="video-thumbnail" accept="image/*" required>
+                            </div>
+                            <div class="admin-form-group">
+                                <label for="video-category">कैटेगरी</label>
+                                <select id="video-category" name="video-category" required>
+                                    <option value="upi">UPI फ्रॉड</option>
+                                    <option value="call">फोन कॉल फ्रॉड</option>
+                                    <option value="social">सोशल मीडिया फ्रॉड</option>
+                                    <option value="privacy">प्राइवेसी टिप्स</option>
+                                    <option value="other">अन्य</option>
+                                </select>
+                            </div>
+                            <div class="admin-actions">
+                                <button type="submit" class="btn primary-btn">वीडियो अपलोड करें</button>
+                            </div>
+                        </form>
+                    </div>
+
+                    <h3>मौजूदा वीडियोज</h3>
+                    <table class="admin-table">
+                        <thead>
+                            <tr>
+                                <th>थंबनेल</th>
+                                <th>टाइटल</th>
+                                <th>कैटेगरी</th>
+                                <th>एक्शन्स</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><img src="images/video-thumbnail-1.jpg" alt="वीडियो थंबनेल" class="admin-thumbnail"></td>
+                                <td>UPI से पेमेंट कैसे करें सुरक्षित तरीके से</td>
+                                <td>UPI फ्रॉड</td>
+                                <td>
+                                    <button class="admin-action-btn edit-btn">एडिट</button>
+                                    <button class="admin-action-btn delete-btn">डिलीट</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><img src="images/video-thumbnail-2.jpg" alt="वीडियो थंबनेल" class="admin-thumbnail"></td>
+                                <td>फोन कॉल फ्रॉड से कैसे बचें</td>
+                                <td>फोन कॉल फ्रॉड</td>
+                                <td>
+                                    <button class="admin-action-btn edit-btn">एडिट</button>
+                                    <button class="admin-action-btn delete-btn">डिलीट</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><img src="images/video-thumbnail-3.jpg" alt="वीडियो थंबनेल" class="admin-thumbnail"></td>
+                                <td>मजबूत पासवर्ड कैसे बनाएं</td>
+                                <td>प्राइवेसी टिप्स</td>
+                                <td>
+                                    <button class="admin-action-btn edit-btn">एडिट</button>
+                                    <button class="admin-action-btn delete-btn">डिलीट</button>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <!-- Reports Section -->
+                <div class="admin-section" id="reports-section">
+                    <h2>फ्रॉड रिपोर्ट्स</h2>
+                    <div class="admin-filters">
+                        <div class="admin-filter">
+                            <label for="report-filter">फिल्टर बाय:</label>
+                            <select id="report-filter">
+                                <option value="all">सभी रिपोर्ट्स</option>
+                                <option value="upi">UPI फ्रॉड</option>
+                                <option value="call">फोन कॉल फ्रॉड</option>
+                                <option value="social">सोशल मीडिया फ्रॉड</option>
+                                <option value="other">अन्य</option>
+                            </select>
+                        </div>
+                        <div class="admin-filter">
+                            <label for="report-status">स्टेटस:</label>
+                            <select id="report-status">
+                                <option value="all">सभी</option>
+                                <option value="new">नई</option>
+                                <option value="in-progress">प्रोसेसिंग</option>
+                                <option value="resolved">रिज़ॉल्व्ड</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <table class="admin-table">
+                        <thead>
+                            <tr>
+                                <th>नाम</th>
+                                <th>फोन</th>
+                                <th>फ्रॉड टाइप</th>
+                                <th>डेट</th>
+                                <th>स्टेटस</th>
+                                <th>एक्शन्स</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>राजेश कुमार</td>
+                                <td>9876543210</td>
+                                <td>UPI फ्रॉड</td>
+                                <td>15 जून, 2023</td>
+                                <td>नई</td>
+                                <td>
+                                    <button class="admin-action-btn view-btn">देखें</button>
+                                    <button class="admin-action-btn process-btn">प्रोसेस</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>सुनीता शर्मा</td>
+                                <td>8765432109</td>
+                                <td>फोन कॉल फ्रॉड</td>
+                                <td>12 जून, 2023</td>
+                                <td>प्रोसेसिंग</td>
+                                <td>
+                                    <button class="admin-action-btn view-btn">देखें</button>
+                                    <button class="admin-action-btn resolve-btn">रिज़ॉल्व</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>अमित पटेल</td>
+                                <td>7654321098</td>
+                                <td>सोशल मीडिया फ्रॉड</td>
+                                <td>10 जून, 2023</td>
+                                <td>रिज़ॉल्व्ड</td>
+                                <td>
+                                    <button class="admin-action-btn view-btn">देखें</button>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <!-- Settings Section -->
+                <div class="admin-section" id="settings-section">
+                    <h2>वेबसाइट सेटिंग्स</h2>
+                    <div class="admin-card">
+                        <h3>जनरल सेटिंग्स</h3>
+                        <form id="general-settings-form">
+                            <div class="admin-form-group">
+                                <label for="website-title">वेबसाइट टाइटल</label>
+                                <input type="text" id="website-title" name="website-title" value="साइबर सुरक्षा जागरूकता">
+                            </div>
+                            <div class="admin-form-group">
+                                <label for="website-description">वेबसाइट डिस्क्रिप्शन</label>
+                                <textarea id="website-description" name="website-description">साइबर सुरक्षा जागरूकता वेबसाइट - ऑनलाइन फ्रॉड से बचाव, सुरक्षित UPI पेमेंट्स, और डिजिटल प्राइवेसी के बारे में जानकारी</textarea>
+                            </div>
+                            <div class="admin-form-group">
+                                <label for="contact-email">कॉन्टैक्ट ईमेल</label>
+                                <input type="email" id="contact-email" name="contact-email" value="help@cybersuraksha.com">
+                            </div>
+                            <div class="admin-form-group">
+                                <label for="website-logo">वेबसाइट लोगो</label>
+                                <input type="file" id="website-logo" name="website-logo" accept="image/*">
+                                <p class="form-help">वर्तमान लोगो बनाए रखने के लिए खाली छोड़ें</p>
+                            </div>
+                            <div class="admin-actions">
+                                <button type="submit" class="btn primary-btn">सेटिंग्स सेव करें</button>
+                            </div>
+                        </form>
+                    </div>
+
+                    <div class="admin-card">
+                        <h3>सोशल मीडिया लिंक्स</h3>
+                        <form id="social-media-form">
+                            <div class="admin-form-group">
+                                <label for="facebook-link">Facebook</label>
+                                <input type="url" id="facebook-link" name="facebook-link" value="https://facebook.com/cybersuraksha">
+                            </div>
+                            <div class="admin-form-group">
+                                <label for="twitter-link">Twitter</label>
+                                <input type="url" id="twitter-link" name="twitter-link" value="https://twitter.com/cybersuraksha">
+                            </div>
+                            <div class="admin-form-group">
+                                <label for="youtube-link">YouTube</label>
+                                <input type="url" id="youtube-link" name="youtube-link" value="https://youtube.com/cybersuraksha">
+                            </div>
+                            <div class="admin-form-group">
+                                <label for="instagram-link">Instagram</label>
+                                <input type="url" id="instagram-link" name="instagram-link" value="https://instagram.com/cybersuraksha">
+                            </div>
+                            <div class="admin-actions">
+                                <button type="submit" class="btn primary-btn">लिंक्स सेव करें</button>
+                            </div>
+                        </form>
+                    </div>
+
+                    <div class="admin-card">
+                        <h3>एडमिन पासवर्ड चेंज करें</h3>
+                        <form id="change-password-form">
+                            <div class="admin-form-group">
+                                <label for="current-password">वर्तमान पासवर्ड</label>
+                                <input type="password" id="current-password" name="current-password" required>
+                            </div>
+                            <div class="admin-form-group">
+                                <label for="new-password">नया पासवर्ड</label>
+                                <input type="password" id="new-password" name="new-password" required>
+                            </div>
+                            <div class="admin-form-group">
+                                <label for="confirm-password">पासवर्ड कन्फर्म करें</label>
+                                <input type="password" id="confirm-password" name="confirm-password" required>
+                            </div>
+                            <div class="admin-actions">
+                                <button type="submit" class="btn primary-btn">पासवर्ड अपडेट करें</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="admin.js"></script>
+</body>
+</html> 
