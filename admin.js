@@ -1,5 +1,53 @@
 // Wait for the DOM to be fully loaded
 document.addEventListener('DOMContentLoaded', function() {
+    // Mobile Menu Toggle
+    const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
+    const adminNav = document.querySelector('.admin-nav');
+    
+    function closeMenu() {
+        if (adminNav) {
+            adminNav.classList.remove('active');
+        }
+    }
+
+    function toggleMenu(e) {
+        if (e) {
+            e.stopPropagation();
+        }
+        adminNav.classList.toggle('active');
+    }
+
+    if (mobileMenuBtn && adminNav) {
+        // Make sure menu is closed by default
+        closeMenu();
+
+        // Toggle menu on button click
+        mobileMenuBtn.addEventListener('click', toggleMenu);
+
+        // Close menu when clicking outside
+        document.addEventListener('click', function(e) {
+            if (!adminNav.contains(e.target) && !mobileMenuBtn.contains(e.target)) {
+                closeMenu();
+            }
+        });
+
+        // Close menu when clicking any menu item
+        const menuItems = adminNav.querySelectorAll('a, button');
+        menuItems.forEach(item => {
+            item.addEventListener('click', closeMenu);
+        });
+
+        // Close menu when clicking tabs
+        document.querySelectorAll('.admin-tab').forEach(tab => {
+            tab.addEventListener('click', closeMenu);
+        });
+
+        // Prevent menu clicks from bubbling
+        adminNav.addEventListener('click', function(e) {
+            e.stopPropagation();
+        });
+    }
+
     // Theme Switcher
     const toggleSwitch = document.querySelector('#admin-checkbox');
     const currentTheme = localStorage.getItem('theme');
@@ -34,19 +82,35 @@ document.addEventListener('DOMContentLoaded', function() {
     const tabs = document.querySelectorAll('.admin-tab');
     const sections = document.querySelectorAll('.admin-section');
     
-    tabs.forEach(tab => {
-        tab.addEventListener('click', function() {
-            const tabName = this.getAttribute('data-tab');
-            
-            // Remove active class from all tabs and sections
-            tabs.forEach(t => t.classList.remove('active'));
-            sections.forEach(s => s.classList.remove('active'));
-            
-            // Add active class to current tab and corresponding section
-            this.classList.add('active');
-            document.getElementById(`${tabName}-section`).classList.add('active');
+    if (tabs.length > 0 && sections.length > 0) {
+        // Hide all sections except dashboard initially
+        sections.forEach(section => {
+            if (!section.id.includes('dashboard')) {
+                section.style.display = 'none';
+            }
         });
-    });
+
+        tabs.forEach(tab => {
+            tab.addEventListener('click', function() {
+                const tabName = this.getAttribute('data-tab');
+                
+                // Remove active class from all tabs and hide all sections
+                tabs.forEach(t => t.classList.remove('active'));
+                sections.forEach(s => {
+                    s.style.display = 'none';
+                    s.classList.remove('active');
+                });
+                
+                // Add active class to current tab and show corresponding section
+                this.classList.add('active');
+                const targetSection = document.getElementById(`${tabName}-section`);
+                if (targetSection) {
+                    targetSection.style.display = 'block';
+                    targetSection.classList.add('active');
+                }
+            });
+        });
+    }
     
     // Logout Button
     const logoutBtn = document.getElementById('logout-btn');
